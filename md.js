@@ -37,7 +37,7 @@ let mdata=`
 <br><br>
 <center>
 <h4 >It Still Under Development By Microintel™</h4>
-<img class="sty" src="DBMI.png" width="100%" height="40px"></img>
+<img class="sty" src="dbMIMD.png" width="100%" height="40px"></img>
 </center>
 `;
 document.body.innerHTML=mdata;

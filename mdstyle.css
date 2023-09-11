@@ -1,0 +1,40 @@
+body{
+       margin:0px;
+       background-color:DarkRed;
+       text-align:left;
+       color: white;
+       font-family: "Arial", sans-serif;
+    }
+a{  
+    color: white;
+    text-size:28;
+    text-decoration: bold;
+    font-size:22px;
+ }
+td{
+   margin:10px;
+   width:300px;
+   padding: 10px;
+   text-align: center;
+   border-radius:20px;
+}
+.icimg{
+height:330px;
+width:250px;
+border-radius:10px;
+box-shadow:3px 3px 20px black;
+}
+.icimg:hover{
+height:330px;
+width:250px;
+border-radius:10px;
+box-shadow:3px 3px 20px black;
+transform:translateY(-32px);
+}
+#head{
+position:relative;
+margin:0px;
+height:150px;
+background-color:black;
+width:1100px;
+}

@@ -130,7 +130,7 @@ function tr(x, y) {
             x[i].style.display="none";
             }
             else {
-            x[i].style.display="inline-block";                 
+            x[i].style.display="inline";                 
             }
             }
-                                 }
+  }

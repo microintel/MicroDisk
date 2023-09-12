@@ -62,5 +62,36 @@ h4:hover{
 display:block;
 color:white;
 text-shadow:4px 4px 10px 4px white;
-transform:translateY(-20px);
+transform:translateY(-24px);
 }
+
+input[type="text"] {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  color: #fff;
+  background-color:DarkRed;
+  border: 2px solid #cc0000;
+  border-radius: 20px;
+  box-shadow: 3px 3px 15px black;
+  font-size: 16px;
+  outline: none;
+  transition:0.8s;
+}
+
+input[type="text"]::placeholder{
+  color:white;
+  opacity: 0.8;
+}
+input[type="text"]:hover {
+  width: 260px;
+  height: 45px;
+  padding: 10px;
+  color: #fff;
+  background-color:DarkRed;
+  border: 3px solid #cc0000;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px black;
+  font-size: 20px;
+  outline: none;
+    }

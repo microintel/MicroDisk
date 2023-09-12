@@ -89,20 +89,21 @@ function tr(x, y) {
             
             div {
             margin:100px 0px 0px 50px;
-            background-color:white;
-            opacity: 0.7;
+            background-color:transperant; 
             border-radius:20px;
             
             }
             </style>
             </head>
-            <body id="im"background="">
+            <body id="im" background="">
             <center>
             <div style="width:300px;height:390px;">
+            <div style="margin:0px;border-radius:8px;width:300px;background-color:white;opacity:0.7;">
             <img src="home.gif" onclick="location.reload();" style="width:30px;height:30px;margin:10px 0px 0px 210px;"></img>
             <hr>
             <h1 style="size: 100px; font-family: Georgia, 'Times New Roman', Times, serif; color: red; text-align: center;" id="titl"></h1>
             <h2 style="color: red;" id="tril"></h2>
+            </div>
             <iframe id="yousrc" src="" frameborder="0" width="300" height="200"> </iframe>
             </div>
             </center>

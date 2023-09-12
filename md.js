@@ -1,11 +1,14 @@
-
 let mdata=`
 <div id="he"><img src="v2.gif" width="200px" height="100px"></div><br><br>
-<div class="im" onclick="tr('IronMan','iu')" id="iu"><img class="icimg" src="https://www.movienewsletters.net/photos/277216R1.jpg"></img><p>Iron Man </p><br></div>
-<div class="im" onclick="tr('TIH2008','iu1')" id="iu1"><img class="icimg" src="https://cdn.marvel.com/content/1x/theincrediblehulk_lob_crd_03.jpg"></img><p> Hulk </p><br></div>
-<div class="im" onclick="tr('IronMan2','iu2')" id="iu2"><img class="icimg" src="https://www.movienewsletters.net/photos/065116R1.jpg"></img> <p>Iron Man 2</p><br></div>
-
-
+<center>
+<div><input type="text" oninput="ch()" id="sch" placeholder="🔍 Search.."/>
+<br>
+</div>
+</center>
+<br><br>
+<div class="im" onclick="tr('IronMan','iu')" id="iu"><img class="icimg" src="https://www.movienewsletters.net/photos/277216R1.jpg"></img><p>Iron Man </p><br><br></div>
+<div class="im" onclick="tr('TIH2008','iu1')" id="iu1"><img class="icimg" src="https://cdn.marvel.com/content/1x/theincrediblehulk_lob_crd_03.jpg"></img><p> Hulk </p><br><br></div>
+<div class="im" onclick="tr('IronMan2','iu2')" id="iu2"><img class="icimg" src="https://www.movienewsletters.net/photos/065116R1.jpg"></img> <p>Iron Man 2</p><br><br></div>
 
 <div class="im" onclick="tr('Thor','iu3')" id="iu3"><img class="icimg" src="https://www.movienewsletters.net/photos/113522R1.jpg">      <p>Thor</p><br></div>
   <div class="im" onclick="tr('CATFA','iu4')" id="iu4"><img class="icimg" src="https://cdn.marvel.com/content/1x/captainamerica_lob_crd_01.jpg">    <p>CA: First Avenger</p><br></div>
@@ -89,10 +92,10 @@ function tr(x, y) {
             
             div {
             margin:100px 0px 0px 50px;
-            background-color:transperant; 
+            background-color:transperent;
             border-radius:20px;
-            
             }
+            
             </style>
             </head>
             <body id="im" background="">
@@ -116,3 +119,18 @@ function tr(x, y) {
             document.getElementById('tril').innerHTML="Watch "+mvi[minfo][0]+" Trailer";
             document.getElementById('yousrc').src=mvi[minfo][2];
             }
+            
+            function ch() {
+            let inp = document.getElementById('sch').value
+            inp=inp.toLowerCase();
+            let x = document.getElementsByClassName('im');
+            for (let i=0;i<x.length; i++){ 
+            let cg=x[i].innerHTML.toLowerCase();
+            if (!cg.includes(inp)) {
+            x[i].style.display="none";
+            }
+            else {
+            x[i].style.display="block";                 
+            }
+            }
+                                 }

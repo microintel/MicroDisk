@@ -37,6 +37,13 @@ let mdata=`
     <div class="im" onclick="tr('AvengersEndgame','iu21')" id="iu21"><img class="icimg" src="https://cdn.marvel.com/content/1x/avengersendgame_lob_crd_05_2.jpg">     <p>Avengers Endgame</p><br></div>
     <div class="im" onclick="tr('SMFFH','iu22')" id="iu22"><img class="icimg" src="https://cdn.marvel.com/content/1x/spider-manfarfromhome_lob_crd_04_3.jpg">   <p>SM:Far From Home</p><br></div>
     <div class="im" onclick="tr('BlackWidow','iu23')" id="iu23"><img class="icimg" src="https://cdn.marvel.com/content/1x/blackwidow_lob_crd_06.jpg">     <p>Black Widow</p><br></div>
+    <div class="im" onclick="tr('Avatar','iu24')" id="iu24"><img class="icimg" src="https://w0.peakpx.com/wallpaper/911/788/HD-wallpaper-avatar-2-poster-avatar-2-fantasy-hollywood-blue-movie.jpg">     <p>Avatar</p><br></div>
+    <div class="im" onclick="tr('Avatar2','iu25')" id="iu25"><img class="icimg" src="https://w0.peakpx.com/wallpaper/771/901/HD-wallpaper-avatar-the-way-of-water-2.jpg">     <p>Avatar 2</p><br></div>
+    <div class="im" onclick="tr('Titanic','iu26')" id="iu26"><img class="icimg" src="https://w0.peakpx.com/wallpaper/756/196/HD-wallpaper-titanic-rose-jack.jpg">     <p>Titanic</p><br></div>
+    
+    
+    
+    
 <br><br>
 <center>
 <h4 >It Still Under Development By Microintel™</h4>
@@ -77,6 +84,9 @@ function tr(x, y) {
                        SMFFH:["Spyder Man: Far From Home","https://images7.alphacoders.com/131/1317406.jpeg","https://www.youtube.com/embed/1s9Yln0YwCw",""],
                        BlackWidow:["Black Widow"],
                        SCTLOTR:["Shang Chi and The Legend Of The Ten Rings","","",""],
+                       Avatar:["Avatar","https://lumiere-a.akamaihd.net/v1/images/a_avatarpandorapedia_treeofvoices_16x9_1098_10_7b521f3b.jpeg?region=0%2C0%2C1920%2C1080&width=1200",""],
+                       Avatar2:["Avatar The Way Of Water","https://lumiere-a.akamaihd.net/v1/images/a_avatarpandorapedia_spirittreemetkayina_16x9_1098_07_34889461.jpeg?region=0%2C0%2C1920%2C1080&width=1200",""],
+                       Titanic:["Titanic","https://wallpaperset.com/w/full/9/6/8/156023.jpg",""],
                        };
             let form = `<html>
             <head>
@@ -121,16 +131,17 @@ function tr(x, y) {
             }
             
             function ch() {
-            let inp = document.getElementById('sch').value
+            let g =document.getElementsByClassName('im');
+            let inp =document.getElementById('sch').value
             inp=inp.toLowerCase();
-            let x = document.getElementsByClassName('im');
-            for (let i=0;i<x.length; i++){ 
-            let cg=x[i].innerHTML.toLowerCase();
+            for (let i=0;i<g.length;){ 
+            let cg=g[i].innerHTML.toLowerCase();
             if (!cg.includes(inp)) {
-            x[i].style.display="none";
-            }
+                   g[i].style.display="none";
+                   }
             else {
-            x[i].style.display="inline-block";                 
-            }
-            }
-}
+                   g[i].style.display="inline-block";                 
+                 }
+                 i++
+                    }
+  }
